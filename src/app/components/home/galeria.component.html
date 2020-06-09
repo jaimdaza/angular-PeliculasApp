@@ -1,0 +1,47 @@
+<br>
+<h1>{{tipo}}</h1>
+<hr>
+<div class="row animated fadeIn fast" *ngIf="peliculas">
+    <div class="col-sm-6">
+        <div class="row">
+            <div [routerLink]="['/pelicula',peliculas[0].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[0] | peliculaImagen )+')'}" class="col-md-12 div-pic-1 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[0].original_title}}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div [routerLink]="['/pelicula',peliculas[1].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[1] | peliculaImagen )+')'}" class="col-sm-6 div-pic-2 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[1].original_title}}
+                </p>
+            </div>
+            <div [routerLink]="['/pelicula',peliculas[2].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[2] | peliculaImagen )+')'}" class="col-sm-6 div-pic-2 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[2].original_title}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div [routerLink]="['/pelicula',peliculas[3].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[3] | peliculaImagen )+')'}" class="col-sm-6 div-pic-2 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[3].original_title}}
+                </p>
+            </div>
+            <div [routerLink]="['/pelicula',peliculas[4].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[4] | peliculaImagen )+')'}" class="col-sm-6 div-pic-2 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[4].original_title}}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div [routerLink]="['/pelicula',peliculas[5].id,'home']" [ngStyle]="{'background-image' : 'url('+( peliculas[6] | peliculaImagen )+')'}" class="col-md-12 div-pic-1 puntero">
+                <p class="pic-titulo">
+                    {{peliculas[0].original_title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
